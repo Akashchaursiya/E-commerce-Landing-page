@@ -20,7 +20,7 @@ const HeroSection = ({ addToCart }) => {
       <div className="button-container">
         <a
           href="#shop"
-          className="btn-shop-now bg-gray-300 text-gray-800 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 overflow-hidden"
+          className="btn-shop-now bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 p-2.5"
         >
           Shop Now
         </a>

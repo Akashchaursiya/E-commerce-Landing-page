@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 
-
-const Navbar = ({ cartItemsCount, cartItems  }) => {
+const Navbar = ({ cartItemsCount }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
 
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <nav className="bg-white shadow-md">
@@ -87,7 +86,7 @@ const Navbar = ({ cartItemsCount, cartItems  }) => {
       >
         <ul className="flex flex-col text-center space-y-2 p-4">
           <li>
-            <a href="#home" className="block text-gray-600 hover:bg-gray-800">
+            <a href="#home" className="block text-gray-600 hover:text-gray-800">
               Home
             </a>
           </li>

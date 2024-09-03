@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import FeaturesSection from "./components/FeaturesSection";
-import AboutSection from "./components/AboutSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import FeaturesSection from './components/FeaturesSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
-
+  
   const addToCart = (item) => {
-    setCartItems((prevItems) => [...prevItems, item]);
+    setCartItems(prevItems => [...prevItems, item]);
   };
-
-  useEffect(() => {
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  }, [cartItems]);
 
   return (
     <div className="bg-gray-100 min-h-screen">
